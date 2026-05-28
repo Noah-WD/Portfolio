@@ -115,3 +115,8 @@ section
     transform: translateY(-5px);
     background-color: #263244;
 }
+
+#contact a 
+{
+    color: #60a5fa;
+}
