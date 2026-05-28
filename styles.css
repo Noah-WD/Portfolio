@@ -104,3 +104,14 @@ section
 {
     background-color: #1d4ed8;
 }
+
+.project 
+{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project:hover 
+{
+    transform: translateY(-5px);
+    background-color: #263244;
+}
