@@ -120,3 +120,52 @@ section
 {
     color: #60a5fa;
 }
+
+.project-section-title 
+{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #60a5fa;
+}
+
+details.project 
+{
+    cursor: pointer;
+}
+
+details.project summary 
+{
+    font-size: 1.1rem;
+    font-weight: bold;
+    list-style: none;
+}
+
+details.project summary::-webkit-details-marker 
+{
+    display: none;
+}
+
+details.project summary::after 
+{
+    content: " +";
+    float: right;
+    color: #60a5fa;
+}
+
+details.project[open] summary::after 
+{
+    content: " −";
+}
+
+.project-details 
+{
+    margin-top: 15px;
+    border-top: 1px solid #374151;
+    padding-top: 15px;
+}
+
+.section-intro 
+{
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
