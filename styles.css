@@ -169,3 +169,28 @@ details.project[open] summary::after
     color: #d1d5db;
     margin-bottom: 20px;
 }
+
+.evidence-gallery 
+{
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+
+.evidence-gallery img 
+{
+    width: 160px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.evidence-gallery img:hover 
+{
+    transform: scale(1.05);
+    opacity: 0.85;
+}
