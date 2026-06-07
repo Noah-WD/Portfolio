@@ -191,6 +191,23 @@ details.project summary
     line-height: 1.7;
 }
 
+.project-content p 
+{
+    margin-bottom: 18px;
+}
+
+.project-content strong 
+{
+    color: #60a5fa;
+}
+
+.project-content h4 
+{
+    color: #60a5fa;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
 .project-overview 
 {
     color: #d1d5db;
