@@ -1,21 +1,8 @@
-p 
-{
-    line-height: 1.6;
-    font-size: 1rem;
+* {
+    box-sizing: border-box;
 }
 
-h2 
-{
-    margin-bottom: 20px;
-}
-
-.project h3 
-{
-    margin-top: 0;
-}
-
-body 
-{
+body {
     background-color: #111827;
     color: white;
     font-family: Arial, sans-serif;
@@ -23,8 +10,25 @@ body
     padding: 0;
 }
 
-nav 
-{
+/* Typography */
+
+p {
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+/* Navigation */
+
+nav {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -32,64 +36,33 @@ nav
     background-color: #111827;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
-nav a 
-{
+nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.2s ease;
 }
 
-nav a:hover 
-{
+nav a:hover {
     color: #60a5fa;
 }
 
-header 
-{
+/* Header */
+
+header {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
     background-color: #1f2937;
 }
 
-section 
-{
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-.project 
-{
-    background-color: #1f2937;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.skills-grid 
-{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skills-grid span 
-{
-    background-color: #1f2937;
-    padding: 10px 14px;
-    border-radius: 999px;
-    font-weight: bold;
-}
-
-.hero-buttons 
-{
+.hero-buttons {
     margin-top: 25px;
 }
 
-.hero-buttons a 
-{
+.hero-buttons a {
     display: inline-block;
     margin: 8px;
     padding: 12px 18px;
@@ -98,174 +71,180 @@ section
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
+    transition: background-color 0.2s ease;
 }
 
-.hero-buttons a:hover 
-{
+.hero-buttons a:hover {
     background-color: #1d4ed8;
 }
 
-.project 
-{
-    transition: transform 0.3s ease, background-color 0.3s ease;
+/* Layout */
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
-.project:hover 
-{
-    transform: translateY(-5px);
-    background-color: #263244;
-}
-
-#contact a 
-{
-    color: #60a5fa;
-}
-
-.project-section-title 
-{
-    margin-top: 40px;
-    margin-bottom: 12px;
-    color: #60a5fa;
-}
-
-.section-intro 
-{
+.section-intro {
     color: #d1d5db;
     margin-bottom: 20px;
 }
 
-details.project 
-{
+.project-section-title {
+    margin-top: 50px;
+    margin-bottom: 12px;
+    color: #60a5fa;
+}
+
+/* Skills */
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-grid span {
+    background-color: #1f2937;
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+/* Project Cards */
+
+.project {
+    background-color: #1f2937;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+    background-color: #263244;
+}
+
+details.project {
     cursor: pointer;
 }
 
-details.project summary 
-{
+details.project summary {
+    display: block;
+    width: 100%;
+    padding: 24px 30px;
+    cursor: pointer;
     font-size: 1.1rem;
     font-weight: bold;
     list-style: none;
 }
 
-details.project summary::-webkit-details-marker 
-{
+details.project summary::-webkit-details-marker {
     display: none;
 }
 
-details.project summary::after 
-{
-    content: " +";
+details.project summary::after {
+    content: "+";
     float: right;
     color: #60a5fa;
+    font-size: 1.3rem;
 }
 
-details.project[open] summary::after 
-{
-    content: " −";
+details.project[open] summary::after {
+    content: "−";
 }
 
-.project-details 
-{
-    margin-top: 15px;
-    border-top: 1px solid #374151;
-    padding-top: 15px;
+.project-content {
+    padding: 0 30px 30px 30px;
 }
 
-details.project 
-{
-    padding: 0;
-    overflow: hidden;
+.project-overview {
+    color: #d1d5db;
 }
 
-details.project summary 
-{
-    display: block;
-    width: 100%;
-    padding: 20px;
-    cursor: pointer;
-    box-sizing: border-box;
-}
-
-.project-content 
-{
-    padding: 20px 30px 25px 30px;
-    line-height: 1.7;
-}
-
-.project-content p 
-{
-    margin-bottom: 18px;
-}
-
-.project-content strong 
-{
-    color: #60a5fa;
-}
-
-.project-content h4 
-{
+.project-content h4 {
     color: #60a5fa;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
-.project-overview 
-{
-    color: #d1d5db;
-    font-weight: 500;
+.project-content ul {
+    padding-left: 25px;
+    margin-top: 10px;
 }
 
-.section-intro 
-{
-    color: #d1d5db;
-    margin-bottom: 20px;
+.project-content li {
+    margin-bottom: 6px;
 }
 
-.evidence-gallery 
-{
-    display: flex;
-    gap: 12px;
-    overflow-x: auto;
-    margin-top: 15px;
-    padding-bottom: 10px;
+.project-content strong {
+    color: #60a5fa;
 }
 
-.evidence-gallery img 
-{
-    width: 160px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid #374151;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.evidence-gallery img:hover 
-{
-    transform: scale(1.05);
-    opacity: 0.85;
-}
+/* Evidence */
 
 .evidence-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .evidence-card {
     background-color: #1f2937;
     padding: 20px;
     border-radius: 10px;
+    transition: transform 0.25s ease;
 }
 
-.evidence-card h3 
-{
-    margin-top: 0;
+.evidence-card:hover {
+    transform: translateY(-3px);
+}
+
+.evidence-card h3 {
     color: #60a5fa;
 }
 
-.evidence-card img 
-{
+.evidence-card img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 12px;
+}
+
+/* Contact */
+
+#contact a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    header {
+        padding: 40px 20px;
+    }
+
+    .hero-buttons a {
+        display: block;
+        width: 200px;
+        margin: 10px auto;
+    }
+
+    details.project summary,
+    .project-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
