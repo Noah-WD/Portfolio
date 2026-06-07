@@ -170,6 +170,32 @@ details.project[open] summary::after
     padding-top: 15px;
 }
 
+details.project 
+{
+    padding: 0;
+    overflow: hidden;
+}
+
+details.project summary 
+{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.project-content 
+{
+    padding: 0 20px 20px 20px;
+}
+
+.project-overview 
+{
+    color: #d1d5db;
+    font-weight: 500;
+}
+
 .section-intro 
 {
     color: #d1d5db;
@@ -199,4 +225,29 @@ details.project[open] summary::after
 {
     transform: scale(1.05);
     opacity: 0.85;
+}
+
+.evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.evidence-card {
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.evidence-card h3 
+{
+    margin-top: 0;
+    color: #60a5fa;
+}
+
+.evidence-card img 
+{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
 }
