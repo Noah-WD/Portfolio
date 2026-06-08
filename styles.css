@@ -165,6 +165,11 @@ details.project[open] summary::after {
     content: "−";
 }
 
+details.project > p {
+    padding: 0 30px;
+    color: #d1d5db;
+}
+
 .project-content {
     padding: 0 30px 30px 30px;
     max-width: 100%;
