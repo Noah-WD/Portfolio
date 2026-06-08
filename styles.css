@@ -8,7 +8,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
+html, body 
+{
+    overflow-x: hidden;
+}
+
 
 /* Typography */
 
@@ -120,6 +128,7 @@ section {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.25s ease, background-color 0.25s ease;
+    max-width: 100%;
 }
 
 .project:hover {
@@ -158,6 +167,13 @@ details.project[open] summary::after {
 
 .project-content {
     padding: 0 30px 30px 30px;
+    max-width: 100%;
+}
+
+.project-content p,
+.project-content li {
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 
 .project-overview {
